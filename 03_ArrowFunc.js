@@ -7,10 +7,21 @@
 const signUpData = {
     userName:  "Abdullah Developer",
     welcomeMessage: function welcomeUser() {
-        console.log(`Hi ${this.userName}, you are welcomed here`);
+        return console.log(`Hi ${this.userName}, you are welcomed here`);
         console.log(this);  // this will give the above objects
+
     }
 }
 
 signUpData.welcomeMessage(); 
-console.log(this); //  this will give us an empty object, beacuse there is nothing  
+console.log(this); //  this will give us an empty object, beacuse there is nothing 
+
+
+// ******************** Arrow Function **********************
+// Here Below is the simple Arrow Function
+const myData = () => {
+    let myFirstName = "Abdullah";
+    let myLastName  = "Developer";
+    return `${myFirstName} ${myLastName}`;
+}
+console.log(myData());
